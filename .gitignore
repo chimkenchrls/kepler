@@ -39,3 +39,15 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# secrets: API keys, credentials, env files (never commit these)
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+*.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+.claude/settings.local.json
