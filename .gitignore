@@ -51,3 +51,6 @@ yarn-error.*
 *.tfstate.*
 .terraform/
 .claude/settings.local.json
+
+# Claude Code subagent work folders
+.claude/worktrees/
