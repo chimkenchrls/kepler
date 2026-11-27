@@ -80,7 +80,7 @@ _Avoid_: Overdraft, deficit, rollover
 ### Lifecycle
 
 **Archived**:
-The state of an Account or Category the user no longer uses but which still has Entries. It is hidden when logging something new, and its past Entries keep it.
+The state of an Account or Category the user no longer uses but which still has Entries. It is hidden when logging something new, and its past Entries keep it. The user can unarchive it to use it again.
 _Avoid_: Deleted, hidden, inactive
 
 ### Backup
