@@ -82,3 +82,13 @@ _Avoid_: Overdraft, deficit, rollover
 **Archived**:
 The state of an Account or Category the user no longer uses but which still has Entries. It is hidden when logging something new, and its past Entries keep it.
 _Avoid_: Deleted, hidden, inactive
+
+### Backup
+
+**Backup**:
+A single file holding a copy of all of the user's Kepler data, made when they choose to back up and saved wherever they pick.
+_Avoid_: Export (the spreadsheet file is a different thing), sync
+
+**Restore**:
+Replacing all of the user's Kepler data with the contents of a Backup. Nothing is merged.
+_Avoid_: Import, merge

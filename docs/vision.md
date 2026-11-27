@@ -37,7 +37,7 @@ These decisions have not been made yet. Each has some context and the options se
 
 ### Data and storage
 
-- **Backup format and destination?** For example: a file export, Google Drive, or the backend once it exists.
+- **Automatic backup in Phase 4?** Phase 1 has a manual Backup to a file you share wherever you like (see the Phase 1 data-loss safety net ticket). Phase 4 can add an automatic copy, for example to Google Drive or the backend once it exists.
 
 ### Backend and security
 
