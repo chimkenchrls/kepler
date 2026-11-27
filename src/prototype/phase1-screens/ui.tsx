@@ -137,11 +137,12 @@ export function entryText(st: ReturnType<typeof useStore>, e: Entry) {
 }
 
 // This month's Entries, newest first, grouped by day.
-export function EntryList({ month }: { month: string }) {
+export function EntryList({ month, limit }: { month: string; limit?: number }) {
   const st = useStore();
   const list = st.entries
     .filter((e) => e.date.slice(0, 7) === month)
-    .sort((a, b) => (a.date === b.date ? b.created - a.created : a.date < b.date ? 1 : -1));
+    .sort((a, b) => (a.date === b.date ? b.created - a.created : a.date < b.date ? 1 : -1))
+    .slice(0, limit);
   if (!list.length) return <Text style={[s.dim, { padding: 16 }]}>Nothing logged in {monthLabel(month)}.</Text>;
   return (
     <>

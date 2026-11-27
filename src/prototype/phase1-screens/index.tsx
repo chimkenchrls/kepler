@@ -8,11 +8,13 @@ import { StoreProvider, useStore } from './store';
 import * as A from './VariantA';
 import * as B from './VariantB';
 import * as C from './VariantC';
+import * as D from './VariantD';
 
 const VARIANTS = [
   { key: 'A', name: A.name, View: A.VariantA },
   { key: 'B', name: B.name, View: B.VariantB },
   { key: 'C', name: C.name, View: C.VariantC },
+  { key: 'D', name: D.name, View: D.VariantD },
 ];
 
 export default function Phase1ScreensPrototype() {
@@ -28,7 +30,7 @@ export default function Phase1ScreensPrototype() {
 function Root() {
   const st = useStore();
   const pad = useSafeAreaInsets();
-  const [i, setI] = useState(0);
+  const [i, setI] = useState(3); // open on D, the newest
   const v = VARIANTS[i];
   const go = (d: number) => (setI((i + d + VARIANTS.length) % VARIANTS.length), st.resetTaps());
 

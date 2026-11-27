@@ -60,12 +60,12 @@ const TabBtn = ({ label, on, onPress }: { label: string; on: boolean; onPress: (
   </Pressable>
 );
 
-function AddForm({ close }: { close: () => void }) {
+export function AddForm({ close, categoryId = '' }: { close: () => void; categoryId?: string }) {
   const st = useStore();
   useBack(close);
   const [kind, setKind] = useState<'expense' | 'income' | 'transfer'>('expense');
   const [amt, setAmt] = useState('');
-  const [cat, setCat] = useState('');
+  const [cat, setCat] = useState(categoryId);
   const [acc, setAcc] = useState(st.lastAccountId);
   const [to, setTo] = useState('');
   const [fee, setFee] = useState('');
