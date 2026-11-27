@@ -59,6 +59,24 @@ The built-in Expense Category that Transfer Fees count under. It cannot be archi
 **Refund**:
 Money returned for an Expense. It is not its own kind of Entry: it is either a change to the original Expense, or an Income under the Refund Category when the Expense was in a past month.
 
+### Budget
+
+**Monthly budget**:
+The most the user means to spend on Expenses in one calendar month. It repeats every month until changed, and Income never raises it.
+_Avoid_: Allowance, spending plan, pay-cycle budget
+
+**Category limit**:
+An optional cap on one Expense Category within the Monthly budget. All Category limits together never exceed the Monthly budget.
+_Avoid_: Category budget, envelope, sub-budget
+
+**Everything else**:
+The part of the Monthly budget left after all Category limits, shared by every Expense Category that has no limit.
+_Avoid_: Other (that is a Category), unassigned, remainder
+
+**Over budget**:
+Spending past the Monthly budget or a Category limit. Kepler warns but never blocks the Expense, and nothing carries into the next month.
+_Avoid_: Overdraft, deficit, rollover
+
 ### Lifecycle
 
 **Archived**:
