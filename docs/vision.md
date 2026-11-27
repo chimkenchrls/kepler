@@ -37,8 +37,6 @@ These decisions have not been made yet. Each has some context and the options se
 
 ### Data and storage
 
-- **Local-only storage or cloud sync?** Local-only is simpler and more private. Sync gives backup and multi-device use, and is part of the cloud portfolio. One option is local-first now with sync added in phase 5.
-- **Which local database?** For example: expo-sqlite (SQL, built into Expo), a key-value store, or a sync-friendly database. The choice affects how hard reports, search and sync will be.
 - **Backup format and destination?** For example: a file export, Google Drive, or the backend once it exists.
 
 ### Backend and security
