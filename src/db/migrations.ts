@@ -95,6 +95,9 @@ const MIGRATIONS: ((db: SQLiteDatabase) => Promise<void>)[] = [
   },
 ];
 
+/** The schema version a fully migrated database has. */
+export const SCHEMA_VERSION = MIGRATIONS.length;
+
 /** Brings the database up to the newest schema. Each step commits fully or not at all. */
 export async function migrate(db: SQLiteDatabase) {
   await db.execAsync('PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON;');

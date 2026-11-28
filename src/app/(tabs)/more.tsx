@@ -7,9 +7,11 @@ export default function MoreScreen() {
       <Pressable style={styles.row} onPress={() => router.push('/accounts')} accessibilityRole="button">
         <Text style={styles.text}>Accounts</Text>
       </Pressable>
-      {/* Placeholders until #18 (Categories) and #14 (Backup & restore) */}
+      {/* Placeholder until #18 (Categories) */}
       <Text style={[styles.row, styles.text, styles.soon]}>Categories</Text>
-      <Text style={[styles.row, styles.text, styles.soon]}>Backup & restore</Text>
+      <Pressable style={styles.row} onPress={() => router.push('/backup')} accessibilityRole="button">
+        <Text style={styles.text}>Backup & restore</Text>
+      </Pressable>
     </View>
   );
 }

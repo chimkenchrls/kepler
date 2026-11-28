@@ -13,6 +13,7 @@ export default function RootLayout() {
         <Stack.Screen name="entry" options={{ title: 'New entry', presentation: 'fullScreenModal' }} />
         <Stack.Screen name="accounts/index" options={{ title: 'Accounts' }} />
         <Stack.Screen name="accounts/edit" />
+        <Stack.Screen name="backup" options={{ title: 'Backup & restore' }} />
       </Stack>
       <StatusBar style="auto" />
     </SQLiteProvider>
